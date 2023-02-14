@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imContinue"
+        app:srcCompat= "@drawable/descarga"
+        android:layout_width="250dp"
+        android:scaleType="centerCrop"
+        android:layout_height="120dp"
+        android:text="Hello World!"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/tvCanal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/sintonizanos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <TextView
+        android:textColor="@color/Discode"
+        android:text ="@string/canal5"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvCanal"
+        android:layout_toStartOf="@+id/imContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:backgroundTint="@color/Discode"
+        android:id="@+id/botoncanal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/cambiar"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/tvCanal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_alignBottom="@id/botoncanal"
+        android:layout_alignTop="@id/botoncanal"
+        android:layout_above="@+id/tvCanal"
+        android:layout_toStartOf="@+id/botoncanal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:entries="@array/array"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
