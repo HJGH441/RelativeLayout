@@ -25,6 +25,7 @@
         android:text="@string/sintonizanos"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     <TextView
+        android:id="@+id/canal5"
         android:textColor="@color/Discode"
         android:text ="@string/canal5"
         android:textSize="32sp"
@@ -33,7 +34,9 @@
         android:layout_toStartOf="@+id/imContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/redondo"
         android:backgroundTint="@color/Discode"
         android:id="@+id/botoncanal"
         android:layout_marginEnd="16dp"
@@ -45,6 +48,7 @@
         android:layout_height="wrap_content"/>
 
     <EditText
+        android:id="@+id/Barra"
         android:layout_alignBottom="@id/botoncanal"
         android:layout_alignTop="@id/botoncanal"
         android:layout_above="@+id/tvCanal"
@@ -53,6 +57,7 @@
         android:layout_height="wrap_content"/>
 
     <Spinner
+        android:id="@+id/spinner1"
         android:entries="@array/array"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
