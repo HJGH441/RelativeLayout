@@ -3,4 +3,8 @@
     <string name="sintonizanos">Sintonizanos la proxima Semana</string>
     <string name="canal5">Canal5</string>
     <string name="cambiar">Cambiar</string>
+    <string name="valor">Valor</string>
+    <string name="datos">Datos</string>
+    <string name="canal">Canal</string>
+    <string name="programa">Programa</string>
 </resources>

@@ -1,7 +1,7 @@
 package com.example.relativelayaout;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -34,6 +34,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 Toast.makeText(MainActivity.this,"El valor es "+text, Toast.LENGTH_SHORT).show();
                 tvCanal.setText(text);
 
+
+            }
+        });
+        imageView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (MainActivity.this, Datos_Activity.class);
+                startActivity(i);
             }
         });
     }
@@ -53,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             ivContinuara.setImageResource(R.drawable.tobecon);
         }
     }
+
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
